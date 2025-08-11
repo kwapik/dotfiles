@@ -1,13 +1,26 @@
 call plug#begin()
 Plug 'arcticicestudio/nord-vim'
 Plug 'bling/vim-airline'
-Plug 'ycm-core/YouCompleteMe'
 Plug 'fatih/vim-go'
+Plug 'majutsushi/tagbar'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-scripts/FuzzyFinder'
+Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 colorscheme nord
 
 let mapleader=","
+"
+" Movement
+map k gk
+map j gj
+map <up> gk
+map <down> gj
+set whichwrap=<,>,[,],b,s
 
 set autoread
 set encoding=utf-8
