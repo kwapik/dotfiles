@@ -27,6 +27,7 @@ set encoding=utf-8
 set nobackup
 set noswapfile
 set nowritebackup
+set wildmode=longest,list
 
 " Tabs
 nnoremap <silent> <c-n> :tabn<cr>
@@ -49,3 +50,10 @@ nnoremap <leader>gb :Gblame<cr>
 
 let g:airline_powerline_fonts = 1
 set guifont=Source\ Code\ Pro\ for\ Powerline\ Medium\ 12
+
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+set ofu=syntaxcomplete#Complete
+
+let g:tagbar_autofocus=1 " jump to tagbar when it's opened
+nnoremap <silent> <leader>b :TagbarToggle<cr>
